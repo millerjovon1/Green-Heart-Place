@@ -1,0 +1,1349 @@
+@import url('https://fonts.cdnfonts.com/css/royal-acidbath');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/roboto-condensed');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Add vendor prefixes for Safari-specific properties */
+/* You may need to add prefixes for specific properties based on your CSS usage */
+
+
+/* main-layout */
+  /* Styles for tablets */
+
+/* Default styles for body */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--main-color);
+  background-color: rgb(253, 241, 228);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+
+/* ==Fonts=== */
+
+/* Base Styles */
+a {
+  color: #007BFF; /* Initial color of the link */
+  background-color: transparent; /* Initial background color */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Add some padding */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background color changes */
+}
+
+a:hover {
+  color: #66B2FF; /* Lighter color on hover */
+  background-color: rgba(102, 178, 255, 0.1); /* Light background color on hover */
+}
+
+h1 {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Media Queries */
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  a {
+      padding: 4px 8px; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  h2 {
+      font-size: 1.25em; /* Adjust font size for smaller screens */
+  }
+
+  h3 {
+      font-size: 1.1em; /* Adjust font size for smaller screens */
+  }
+
+  p {
+      font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  a {
+      padding: 3px 6px; /* Further adjust padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 1.2em; /* Further adjust font size for smaller screens */
+  }
+
+  h2 {
+      font-size: 1em; /* Further adjust font size for smaller screens */
+  }
+
+  h3 {
+      font-size: 0.9em; /* Further adjust font size for smaller screens */
+  }
+
+  p {
+      font-size: 0.9em; /* Further adjust font size for smaller screens */
+  }
+}
+
+
+/*==== Global Variables ===*/
+.p-none{
+  padding: 0px;
+}
+
+.plugin-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 768px) {
+  .plugin-list{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plugin-list{
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+.quick-border-radius{
+  border-radius: 6px;
+}
+.row-1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .row-1{
+    max-width: 360px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .row-1{
+    max-width: 360px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.row-2{
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .row-2{
+    max-width: 360px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .row-2{
+    max-width: 360px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.col-1{
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.col-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.col-3{
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fa-wifi{
+  font-size: 30px;
+  margin-right: 20%;
+}
+.fa-square-parking{
+  font-size: 30px;
+  margin-right: 20%;
+}
+.m-bottom-none{
+  margin-bottom: 0px;
+}
+/* ====Nav-bar=== */
+
+.nav-bar {
+  position: relative;
+  display: -webkit-box; /* Safari */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -webkit-box-pack: justify; /* Safari */
+  -ms-flex-pack: justify; /* IE 10 */
+  justify-content: space-between;
+  -webkit-box-align: center; /* Safari */
+  -ms-flex-align: center; /* IE 10 */
+  align-items: center;
+  color: black;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+}
+
+.logo img {
+  max-height: 80px;
+  margin-left: 12px; /* Adjust the max height based on your logo size preference */
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: -webkit-box; /* Safari */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  margin-right: 12px;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: 250;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  margin-bottom: 1em;
+  padding: 8px; /* Increased padding for a larger clickable area */
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #ff9900; /* Change to your preferred hover color */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+}
+
+.nav-toggle {
+  display: none; /* Initially hidden on larger screens */
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+      display: block;
+      cursor: pointer; /* Change cursor to pointer for better UX */
+      padding: 10px; /* Add padding for better visibility */
+      z-index: 1001; /* Ensure toggle is above the menu */
+      position: absolute; /* Ensure toggle stays in place */
+      right: 12px; /* Align to the right */
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Center vertically */
+  }
+
+  .nav-menu-container {
+      display: none; /* Initially hide the nav menu */
+      position: absolute; /* Position menu container */
+      top: 60px; /* Adjust top position as needed */
+      left: 0; /* Align menu container with left edge */
+      width: 100%; /* Make menu container full width */
+      background-color: #fff; /* Adjust background color as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+      z-index: 1000; /* Ensure menu is on top of other elements */
+  }
+
+  .nav-menu-container.active {
+      display: block; /* Display the menu container when active */
+  }
+
+  .nav-menu {
+      -webkit-box-orient: vertical; /* Safari */
+      -webkit-box-direction: normal; /* Safari */
+      -ms-flex-direction: column; /* IE 10 */
+      flex-direction: column;
+      width: 100%; /* Ensure the menu takes full width */
+  }
+
+  .nav-menu li {
+      padding: 10px; /* Adjust padding as needed */
+      border-bottom: 1px solid #eee; /* Add bottom border between items */
+      width: 100%; /* Ensure the items take full width */
+  }
+
+  .nav-menu a {
+      color: black; /* Adjust text color as needed */
+      font-size: 16px; /* Adjust font size as needed */
+      display: block; /* Ensure the links take full width */
+  }
+}
+@media (max-width: 480px) {
+  .nav-toggle {
+      display: block;
+      cursor: pointer; /* Change cursor to pointer for better UX */
+      padding: 10px; /* Add padding for better visibility */
+      z-index: 1001; /* Ensure toggle is above the menu */
+      position: absolute; /* Ensure toggle stays in place */
+      right: 12px; /* Align to the right */
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Center vertically */
+  }
+
+  .nav-menu-container {
+      display: none; /* Initially hide the nav menu */
+      position: absolute; /* Position menu container */
+      top: 60px; /* Adjust top position as needed */
+      left: 0; /* Align menu container with left edge */
+      width: 100%; /* Make menu container full width */
+      background-color: #fff; /* Adjust background color as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+      z-index: 1000; /* Ensure menu is on top of other elements */
+  }
+
+  .nav-menu-container.active {
+      display: block; /* Display the menu container when active */
+  }
+
+  .nav-menu {
+      -webkit-box-orient: vertical; /* Safari */
+      -webkit-box-direction: normal; /* Safari */
+      -ms-flex-direction: column; /* IE 10 */
+      flex-direction: column;
+      width: 100%; /* Ensure the menu takes full width */
+  }
+
+  .nav-menu li {
+      padding: 10px; /* Adjust padding as needed */
+      border-bottom: 1px solid #eee; /* Add bottom border between items */
+      width: 100%; /* Ensure the items take full width */
+  }
+
+  .nav-menu a {
+      color: black; /* Adjust text color as needed */
+      font-size: 16px; /* Adjust font size as needed */
+      display: block; /* Ensure the links take full width */
+  }
+}
+.banner-restaurant {
+
+  max-width: 1200px;
+
+  width: 100%;
+  height: 600px; /* or any desired height */
+
+  background-image: image-set(url('../../images/bettertogethercoffee1-1536x1024.webp') 1x);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover; /* OLD - Webkit */
+  -moz-background-size: cover;    /* OLD - Firefox 3.6+ */
+  -o-background-size: cover;
+  margin: 0 auto;     /* OLD - Opera 9.5+ */
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    background-image: -webkit-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: -moz-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: -o-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: image-set(url('../../images/banner_img3.jpeg') 1x);
+    height: 400px;
+    -webkit-background-size: cover; /* OLD - Webkit */
+    -moz-background-size: cover;    /* OLD - Firefox 3.6+ */
+    -o-background-size: cover;      /* OLD - Opera 9.5+ */
+    background-size: cover;         /* NEW - Spec */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    background-image: -webkit-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: -moz-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: -o-image-set(url('../../images/banner_img3.jpeg') 1x);
+    background-image: image-set(url('../../images/banner_img3.jpeg') 1x);
+    height: 400px;
+    -webkit-background-size: cover; /* OLD - Webkit */
+    -moz-background-size: cover;    /* OLD - Firefox 3.6+ */
+    -o-background-size: cover;      /* OLD - Opera 9.5+ */
+    background-size: cover;         /* NEW - Spec */
+  }
+}
+
+
+
+.kklc-title{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44 104 46 / 84%);
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+.page-title{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44 104 46 / 84%);
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+.main-restaurant-container{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+/* ==Standard-Member-Card== */
+
+.standard-member-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4%;
+}
+@media (max-width: 768px) {
+  .standard-member-card{
+   max-width: 400px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-member-card{
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+
+.standard-member-profile{
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.standard-member-img{
+  width: 100%;
+}
+
+.standard-owner-bio{
+  width: 100%;
+}
+.standard-menu-bio li{
+  list-style-type: none;
+}
+.standard-extra-img{
+  border-radius: 8px;
+  width: 160px;
+}
+
+
+.standard-menu-bio{
+  max-width: 260px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 2%;
+
+}
+
+.value-product-img{
+  max-width: 360px;
+  width: 100%;
+  margin-top: 4%;
+}
+.value-photo{
+  max-width: 360px;
+  border-radius: 6px;
+}
+
+
+  .standard-amenities-list {
+    background-color: rgb(65 197 250 / 26%);
+    border-radius: 6px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.icon-left {
+    display: flex;
+    align-items: center;
+}
+.icon-left p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.payment-img{
+  width: 30px;
+}
+.standard-customer-fav{
+  width: 100%;
+}
+
+.standard-customer-fav li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+/* ==Center=== */
+.standard-member-info{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .standard-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+
+
+.standard-member-bio{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.shop-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.standard-owner-avatar{
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(34, 81, 29, 0.615);
+  border-radius: 8px;
+  margin: 2%;
+}
+@media (max-width: 768px) {
+  .standard-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.standard-member-owner-photo{
+  width: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .standard-member-owner-photo{
+    width: 80px;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-member-owner-photo{
+    width: 80px;
+  }
+}
+
+.standard-member-store-info{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4%;
+}
+@media (max-width: 768px) {
+  .standard-member-store-info{
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-member-store-info{
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .standard-store-description{
+   flex-direction: column;
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .standard-store-description{
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+
+
+/* ===Right Side */
+.standard-member-url{
+  max-width:100px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+
+.fa-instagram {
+  color: #E4405F; /* Instagram color */
+  font-size: 40px; /* Size of the icon */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+.fa-instagram:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+}
+.fa-globe{
+  font-size: 30px;
+}
+/* Plus Member Card */
+.plus-member-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4%;
+}
+@media (max-width: 768px) {
+  .plus-member-card{
+   max-width: 400px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-member-card{
+
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.vertical-trifold{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plus-member-profile{
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.plus-member-img{
+  width: 100%;
+}
+
+.plus-owner-bio{
+  width: 100%;
+}
+.plus-menu-bio li{
+  list-style-type: none;
+}
+.plus-extra-img{
+  border-radius: 8px;
+  width: 160px;
+}
+
+
+.plus-menu-bio{
+  max-width: 260px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 2%;
+
+}
+
+.value-product-img{
+  max-width: 360px;
+  width: 100%;
+  margin-top: 4%;
+}
+.value-photo{
+  max-width: 360px;
+  border-radius: 6px;
+}
+
+
+  .plus-amenities-list {
+    background-color: rgb(65 197 250 / 26%);
+    border-radius: 6px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .plus-amenities-list{
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-amenities-list{
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+
+.icon-left {
+    display: flex;
+    align-items: center;
+}
+.icon-left p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.payment-img{
+  width: 30px;
+}
+.plus-customer-fav{
+  width: 100%;
+}
+
+.plus-customer-fav li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+/* ==Center=== */
+.plus-member-info{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .plus-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+
+.plus-member-bio{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.shop-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .shop-info{
+    max-width: 100px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .shop-info{
+    max-width: 100px;
+    width: 100%;
+  }
+}
+
+.plus-owner-avatar{
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(34, 81, 29, 0.615);
+  border-radius: 8px;
+  margin: 2%;
+}
+@media (max-width: 768px) {
+  .plus-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.plus-member-owner-photo{
+  width: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .plus-member-owner-photo{
+    width: 80px;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-member-owner-photo{
+    width: 80px;
+  }
+}
+
+.plus-member-store-info{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4%;
+}
+
+@media (max-width: 768px) {
+  .plus-member-store-info{
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-member-store-info{
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .plus-store-description{
+   flex-direction: column;
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .plus-store-description{
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+
+
+/* ===Right Side */
+.plus-member-url{
+  max-width:100px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.fa-instagram {
+  color: #E4405F; /* Instagram color */
+  font-size: 40px; /* Size of the icon */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+.fa-instagram:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+}
+.fa-globe{
+  font-size: 30px;
+}
+
+
+
+/* Premium Member Card */
+.premium-member-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4%;
+}
+@media (max-width: 768px) {
+  .premium-member-card{
+   max-width: 400px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-member-card{
+
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.vertical-trifold{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.premium-member-profile{
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.premium-member-img{
+  width: 100%;
+}
+
+.premium-owner-bio{
+  width: 100%;
+}
+.premium-menu-bio li{
+  list-style-type: none;
+}
+.premium-extra-img{
+  border-radius: 8px;
+  width: 160px;
+}
+
+
+.premium-menu-bio{
+  max-width: 260px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 2%;
+
+}
+
+.value-product-img{
+  max-width: 360px;
+  width: 100%;
+  margin-top: 4%;
+}
+.value-photo{
+  max-width: 360px;
+  border-radius: 6px;
+}
+
+
+  .premium-amenities-list {
+    background-color: rgb(65 197 250 / 26%);
+    border-radius: 6px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.icon-left {
+    display: flex;
+    align-items: center;
+}
+.icon-left p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.payment-img{
+  width: 30px;
+}
+.premium-customer-fav{
+  width: 100%;
+}
+
+.premium-customer-fav li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+/* ==Center=== */
+.premium-member-info{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .premium-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-member-info{
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    border: none;
+  }
+}
+.premium-member-bio{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.shop-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.premium-owner-avatar{
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(34, 81, 29, 0.615);
+  border-radius: 8px;
+  margin: 2%;
+}
+@media (max-width: 768px) {
+  .premium-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-owner-avatar{
+    max-width: 180px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.premium-member-owner-photo{
+  width: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .premium-member-owner-photo{
+    width: 80px;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-member-owner-photo{
+    width: 80px;
+  }
+}
+.premium-member-store-info{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4%;
+}
+@media (max-width: 768px) {
+  .premium-member-store-info{
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-member-store-info{
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .premium-store-description{
+   flex-direction: column;
+   max-width: 360px;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .premium-store-description{
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+
+/* ===Right Side */
+.premium-member-url{
+  max-width:100px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.fa-instagram {
+  color: #E4405F; /* Instagram color */
+  font-size: 40px; /* Size of the icon */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+.fa-instagram:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+}
+.fa-globe{
+  font-size: 30px;
+}
+/* ==Accordian Style== */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgba(78, 197, 218, 0.85);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 2px;
+  max-width:360px;
+  width: 100%;
+  margin-left: 3%;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 3px 5px 5px rgb(65, 65, 65);
+
+}
+
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: rgba(255, 215, 215, 0.486);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .panel{
+    padding: 0 2px;
+
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .panel{
+    padding: 0 2px;
+
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
