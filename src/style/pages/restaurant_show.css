@@ -236,6 +236,25 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+@media (max-width: 768px) {
+  .col-3{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .col-3{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .fa-wifi{
   font-size: 30px;
   margin-right: 20%;
@@ -475,6 +494,22 @@ p {
   justify-content: space-evenly;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .main-restaurant-container{
+   max-width: 400px;
+   justify-content: center;
+   width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .main-restaurant-container{
+    max-width: 400px;
+    justify-content: center;
+    width: 100%;
+  }
+}
 /* ==Standard-Member-Card== */
 
 .standard-member-card{
@@ -486,7 +521,7 @@ p {
 }
 @media (max-width: 768px) {
   .standard-member-card{
-   max-width: 400px;
+   max-width: 360px;
    width: 100%;
   }
 }
@@ -494,7 +529,7 @@ p {
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
   .standard-member-card{
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
   }
 }
@@ -741,7 +776,7 @@ p {
 }
 @media (max-width: 768px) {
   .plus-member-card{
-   max-width: 400px;
+   max-width: 360px;
    width: 100%;
   }
 }
@@ -750,7 +785,7 @@ p {
 @media (max-width: 480px) {
   .plus-member-card{
 
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
   }
 }
@@ -817,7 +852,8 @@ p {
     gap: 16px;
     align-items: flex-start;
 }
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
   .plus-amenities-list{
    max-width: 360px;
    width: 100%;
@@ -825,12 +861,7 @@ p {
 }
 
 /* For devices with a maximum width of 480px */
-@media (max-width: 480px) {
-  .plus-amenities-list{
-    max-width: 360px;
-    width: 100%;
-  }
-}
+
 
 
 .icon-left {
@@ -1032,7 +1063,7 @@ p {
 }
 @media (max-width: 768px) {
   .premium-member-card{
-   max-width: 400px;
+   max-width: 360px;
    width: 100%;
   }
 }
@@ -1041,7 +1072,7 @@ p {
 @media (max-width: 480px) {
   .premium-member-card{
 
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
   }
 }
@@ -1298,6 +1329,22 @@ p {
   box-shadow: 3px 5px 5px rgb(65, 65, 65);
 
 }
+@media (max-width: 768px) {
+  .accordion{
+    margin: 0px;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+/* For devices with a maximum width of 480px */
+@media (max-width: 480px) {
+  .accordion{
+    margin: 0px;
+    max-width: 360px;
+    width: 100%;
+  }
+}
 
 
 
@@ -1306,6 +1353,7 @@ p {
 .active, .accordion:hover {
   background-color: #ccc;
 }
+
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -1319,8 +1367,7 @@ p {
 @media (max-width: 768px) {
   .panel{
     padding: 0 2px;
-
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
   }
 }
@@ -1329,8 +1376,7 @@ p {
 @media (max-width: 480px) {
   .panel{
     padding: 0 2px;
-
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
   }
 }
