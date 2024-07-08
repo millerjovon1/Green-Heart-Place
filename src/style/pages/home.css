@@ -545,9 +545,39 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .kklc-vendor-map{
+    max-width: 360px;
+    width: 100%;
+
+  }
+}
+@media only screen and (max-width: 480px) {
+  .kklc-vendor-map{
+    max-width: 360px;
+    width: 100%;
+
+  }
+}
+
 .vendor-map{
   width: 400px;
 }
+@media only screen and (max-width: 768px) {
+  .vendor-map{
+    max-width: 300px;
+    width: 100%;
+
+  }
+}
+@media only screen and (max-width: 480px) {
+  .vendor-map{
+    max-width: 300px;
+    width: 100%;
+
+  }
+}
+
 
 .main-grid {
   width: 100%;
