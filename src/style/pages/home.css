@@ -393,108 +393,10 @@ p {
   }
 }
 
-
-
-
-.about {
-  max-width: 1200px;
-  width: 100%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-orient: vertical; /* OLD - iOS 6-, Safari 3.1-6 */
-  -webkit-box-direction: normal; /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-direction: column; /* TWEENER - IE 10 */
-  -webkit-flex-direction: column; /* NEW - Chrome */
-  flex-direction: column;    /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-pack: justify; /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-pack: distribute; /* TWEENER - IE 10 */
-  -webkit-justify-content: space-evenly; /* NEW - Chrome */
-  justify-content: space-evenly; /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-align: center; /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-align: center;    /* TWEENER - IE 10 */
-  -webkit-align-items: center; /* NEW - Chrome */
-  align-items: center;       /* NEW, Spec - Firefox, Chrome, Opera */
-  border-radius: 8px;
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-
-@media only screen and (max-width: 768px) {
-  .about {
-    max-width: 400px;
-    width: 100%;
-    padding: 0px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .about {
-    max-width: 360px;
-    width: 100%;
-    padding: 0px;
-  }
-}
-
-.yuka-profile{
-  max-width: 300px;
-  width: 100%;
+.about-bio{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-}
-.yuka-profile {
-  max-width: 300px;
-  width: 100%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-orient: vertical; /* OLD - iOS 6-, Safari 3.1-6 */
-  -webkit-box-direction: normal; /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-direction: column; /* TWEENER - IE 10 */
-  -webkit-flex-direction: column; /* NEW - Chrome */
-  flex-direction: column;    /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-pack: center;     /* TWEENER - IE 10 */
-  -webkit-justify-content: center; /* NEW - Chrome */
-  justify-content: center;   /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-align: center; /* OLD - iOS 6-, Safari 3.1-6 */
-  -ms-flex-align: center;    /* TWEENER - IE 10 */
-  -webkit-align-items: center; /* NEW - Chrome */
-  align-items: center;       /* NEW, Spec - Firefox, Chrome, Opera */
-  border-radius: 8px;
-}
-
-
-.yuka-profile p{
-  margin: 0px;
-  text-align: center;
-}
-
-.yuka-profile h3{
-  margin: 0px;
-  text-align: center;
-}
-.img-circle{
-  width: 240px;
-  border-radius: 50%;
-}
-@media only screen and (max-width: 768px) {
-  .img-circle {
-    width: 180px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .img-circle {
-    width: 180px;
-
-  }
-}
-.about-bio{
   max-width: 1200px;
   width: 100%;
   text-align: left;
@@ -513,28 +415,6 @@ p {
 }
 
 
-/*
-@media only screen and (max-width: 768px) {
-  .about-info {
-      max-width: 360px;
-      width: 100%;
-      -webkit-box-orient: vertical; /* Safari */
-      /* -webkit-box-direction: normal; /* Safari */
-      /* -ms-flex-direction: column; IE 10 */
-      /* flex-direction: column; */ */
-  /* }
-} */
-
-/* @media only screen and (max-width: 480px) { */
-  /* .about-info {
-      max-width: 360px;
-      width: 100%;
-      -webkit-box-orient: vertical; /* Safari */
-      /* -webkit-box-direction: normal; Safari */
-      /* -ms-flex-direction: column; IE 10 */
-      /* flex-direction: column; */
-  /* }
-} */
 
 
 .kklc-vendor-map{
