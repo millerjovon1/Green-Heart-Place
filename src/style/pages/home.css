@@ -508,6 +508,8 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .main-grid {
+    max-width: 360px;
+    width: 100%;
     -ms-grid-columns: (1fr,2); /* For IE */
     grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
   }
@@ -515,6 +517,8 @@ p {
 
 @media only screen and (max-width: 480px) {
   .main-grid {
+    max-width: 360px;
+    width: 100%;
     -ms-grid-columns: 1fr; /* For IE */
     grid-template-columns: 1fr; /* Creates 1 column */
   }
