@@ -379,6 +379,21 @@ p {
   -webkit-align-items: center; /* NEW - Chrome */
   align-items: center;       /* NEW, Spec - Firefox, Chrome, Opera */
 }
+@media only screen and (max-width: 768px) {
+  .main-container {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-container {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+
 
 
 .about {
@@ -483,6 +498,18 @@ p {
   max-width: 1200px;
   width: 100%;
   text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .about-bio{
+    max-width: 360px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-bio{
+    max-width: 360px;
+    width: 100%;
+  }
 }
 
 
@@ -765,24 +792,35 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .overlay-font{
-    font-size: 70px;
+    font-size: 18px;
     text-align: center;
-
-
   }
 }
 @media only screen and (max-width: 480px) {
   .overlay-font{
-    font-size: 70px;
+    font-size: 18px;
     text-align: center;
-
-
-
   }
 }
 .feature-section{
   width: 100%;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .feature-category {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .feature-category {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
 .featured-grid {
   width: 100%;
   text-align: center;
@@ -790,6 +828,25 @@ p {
   align-items: flex-start;
   grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
   gap: 10px; /* Adjust the gap between grid items as needed */
+  margin: 0 auto;
+
+}
+@media only screen and (max-width: 768px) {
+  .featured-grid{
+    max-width: 360px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Creates 4 equal-width columns */
+    gap: 5px; /* Adjust the gap between grid items as needed */
+
+  }
+}
+@media only screen and (max-width: 480px) {
+  .featured-grid{
+    max-width: 360px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Creates 4 equal-width columns */
+    gap: 5px; /* Adjust the gap between grid items as needed */
+  }
 }
 
 .featured-grid > * {
@@ -809,23 +866,154 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 @media only screen and (max-width: 768px) {
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on smaller screens */
+  .feat-card-img{
+    width: 140px;
+
   }
-  .feat-card-img {
-    width: 200px;
-    height: 200px;
+}
+@media only screen and (max-width: 480px) {
+  .feat-card-img{
+    max-width: 140px;
   }
 }
 
+
+
+.events-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.event-photo{
+  max-width: 800px;
+  width: 100%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1a3c34;
+  color: white;
+  text-align: left;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-top: 2%;
+}
+@media only screen and (max-width: 768px) {
+  .footer{
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
 @media only screen and (max-width: 480px) {
-  .feature-grid {
-    grid-template-columns: 1fr; /* Adjusts to 1 column on the smallest screens */
+  .footer{
+    flex-direction: column;
+    align-items: center;
+
   }
-  .feat-card-img {
-    width: 200px;
-    height: 200px;
-  }
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.footer-contact-information{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
